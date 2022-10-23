@@ -1,5 +1,6 @@
 let tabla=2;
 let estado=1;
+let multiplicadores=[1,2,3,4,5,6,7,8,9,10];
 
 function inicio(){
     let opciones=document.getElementById("opciones");
@@ -34,24 +35,25 @@ function cambiarTabla(numero){
     document.getElementById("multiplicaciones").style.display='';
     tabla=numero;
     estado=1;
-    document.getElementById("multiplicador").textContent=estado;
+    multiplicadores=shuffle(multiplicadores);
+    document.getElementById("multiplicador").textContent=multiplicadores[estado-1];
     document.getElementsByName("sol").forEach((x)=>{x.style.backgroundColor=""})
 }
 
 function respuesta(obj){
     let numero = obj.textContent*1;
-    if(tabla*estado==numero){
+    if(tabla*multiplicadores[estado-1]==numero){
         obj.style.backgroundColor="#adff2f";
         siguienteOperacion();
     }else{
-        swal("Recuerda: "+tabla+" x "+estado+" = "+(tabla*estado), "... Continua!")
+        swal("Recuerda: "+tabla+" x "+multiplicadores[estado-1]+" = "+(tabla*multiplicadores[estado-1]), "... Continua!")
     }
 }
 
 function siguienteOperacion(){
     if(estado<10){
         estado++;
-        document.getElementById("multiplicador").textContent=estado;
+        document.getElementById("multiplicador").textContent=multiplicadores[estado-1];
     }else{
         if(tabla<10){
             tabla++;
