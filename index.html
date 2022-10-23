@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juego de las tablas</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/juego-styles.css"/>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/logic.juego.js"></script>
+  </head>
+  <body onload="inicio()">
+    <div class="container">
+        <h1 class="my-4">Hello, world!</h1>
+        <div id="opciones">
+          
+        </div>
+        <div id="multiplicaciones" class="row my-4">
+          <div id="problema" class="col-md-12 col-lg-3 problema my-4">
+            <div id="multiplicando" class="circulo-problema">n</div>X
+            <div id="multiplicador" class="circulo-problema">n</div>=
+          </div>
+          <div id="soluciones" class="col-md-12 col-lg-9 my-4">
+            <div class="row">
+              <button class="circulo-soluciones" id="s1" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s2" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s3" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s4" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s5" name="sol" onclick="respuesta(this)">s</button>
+            </div>
+            <div class="row">
+              <button class="circulo-soluciones" id="s6" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s7" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s8" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s9" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s10" name="sol" onclick="respuesta(this)">s</button>
+            </div>
+            <div class="row">
+              <button class="circulo-soluciones" id="s11" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s12" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s13" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s14" name="sol" onclick="respuesta(this)">s</button>
+              <button class="circulo-soluciones" id="s15" name="sol" onclick="respuesta(this)">s</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.texto-formato{
+    font-family: Verdana;
+}
+
+.circulo-opcion{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #fffa2f;
+    color: black;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.circulo-problema{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #2fffb5;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.circulo-soluciones{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #d07cff;
+    color: black;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin:3px;
+}
+
+.problema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
